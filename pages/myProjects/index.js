@@ -5,7 +5,7 @@ export default function MyProjects() {
       <>
          <Head> 
        <title>Portfolio | MyProjects</title></Head>
-        <h1>my Projects card</h1>
+        <h1>my Projects</h1>
       </>
     )
   }
