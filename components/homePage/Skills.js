@@ -1,7 +1,7 @@
 
 export default function Skills() {
   return (
-       <div>
+       <div className="container">
 <div>
 <div><img src="" alt="icon node.js"/></div>
 <div><h3>node.js</h3></div>

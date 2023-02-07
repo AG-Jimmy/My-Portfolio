@@ -1,12 +1,16 @@
 
 export default function About() {
     return (
-      <div>
+      <div className="container ">
 
-      <div>
-        <div><img src="myIMG.jpg" alt="p" width='100px' height='120'/> </div>
-        <div><h1>Ahmed Gamal</h1></div>
-        <div><h6>MERN Stack developer</h6></div>
+      <div className="row">
+        
+        <div className="col-3"><img src="myIMG.jpg" alt="p" width='95%' height='100px'/> </div>
+
+        <div className="col">
+        <h1>Ahmed Gamal</h1>
+        <h6>MERN Stack developer</h6>
+        </div>
 
       </div>
 
