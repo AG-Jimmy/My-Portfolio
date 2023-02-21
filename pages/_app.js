@@ -7,14 +7,14 @@ import Head from "next/head"
 
 export default function App({ Component, pageProps }) {
   return(
-  <>
-       <Head> <meta name="description" content="Portfolio Ahmed Gamal as (MERN)full stack developer  "/>
-  
+  <div className="globalBody bg-gradient">
+  <div className="">
+       <Head> <meta  name="description" content="Portfolio Ahmed Gamal as (MERN)full stack developer  "/>
       </Head>
-      <Navbar/>
+      <Navbar />
       <Component {...pageProps} />
       <Footer/>
-
-  </> 
+  </div> 
+  </div>
   
   )}

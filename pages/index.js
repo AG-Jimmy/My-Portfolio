@@ -1,7 +1,5 @@
 import About from "../components/homePage/About";
 import Skills from "../components/homePage/Skills";
-
-
 import Head from "next/head";
 
 

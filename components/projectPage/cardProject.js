@@ -1,43 +1,37 @@
+// import Image from "next/legacy/image";
+import Style from "../../styles/cardProject.module.css";
 
-export default function CardProject(){
- 
-    return(
-<div>
-    {/* {console.log()} */}
-    <h1>cards</h1>
-</div>
-    )
+export default function CardProject({ project }) {
+  const { name, language } = project;
+  const id = project.id;
+  // const myImg = project.owner.avatar_url;
+  const topic = project.topics;
+  const description = project.description;
+  const urlProject = project.html_url;
+
+  return (
+    
+    <div className="container  justify-content-center d-flex p-5">
+
+      <div className={Style.cards} key={id}>
+        <h2 className={Style.titleCards}>{name}</h2>
+
+        <h6 className={Style.textCards}>{description}</h6>
+
+        <h2 className={Style.titleCards}>topic & technology</h2>
+
+        <h6 className={Style.textCards}> {...topic.join(" , ")} {language}</h6>
+
+        <div className="justify-content-center d-flex p-2">
+          <a
+            class={Style.buttonLinkCards + " text-center"}
+            href={urlProject}
+            target="_blank"
+          >
+            visit my repo
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-
-// export  async function getStaticProps(){
-
-//         const res= await fetch('https://api.github.com/users/Ahmed-Gamal-Jimmy/repos');
-//         const data=await res.json();
-//         return{props:{project:data}};
-//     };   
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // <div><h4>Portfolio</h4></div>
-    //     <div><img src="" alt="1"/></div>
-
-    //     <div>
-    //         <div><h6></h6></div>
-    //         <div>
-    //             <div>js</div>
-    //             <div>css</div>
-    //             <div>html</div>
-    //         </div>
-    //     </div>
-

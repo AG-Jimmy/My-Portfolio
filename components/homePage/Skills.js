@@ -1,56 +1,28 @@
+import { SiJavascript,SiMysql,SiMongodb,SiAdobephotoshop,SiAdobeillustrator } from "react-icons/si";
+import { FaNode,FaReact} from "react-icons/Fa";
+import { AiFillHtml5} from "react-icons/ai";
+import { DiCss3Full} from "react-icons/di";
+import { BsBootstrapFill} from "react-icons/bs";
+
 
 export default function Skills() {
   return (
-       <div className="container">
-<div>
-<div><img src="" alt="icon node.js"/></div>
-<div><h3>node.js</h3></div>
+  
+<div className="container text-center">
+  <h2>Skills</h2>
+<div className="row  row-cols-3 row-cols-lg-5  p-5 ">
+  <div className="col p-3 border border-light"> <FaNode /> Node.Js                </div>
+  <div className="col p-3 border border-light"> <SiJavascript /> JavaScript       </div>
+  <div className="col p-3 border border-light"> <FaReact /> React.Js              </div>
+  <div className="col p-3 border border-light"> <SiMysql /> MySQL                 </div>
+  <div className="col p-3 border border-light"> <SiMongodb /> MongoDB             </div>
+  <div className="col p-3 border border-light"> <AiFillHtml5 /> HTML              </div>
+  <div className="col p-3 border border-light"> <DiCss3Full /> CSS                </div>
+  <div className="col p-3 border border-light"> <BsBootstrapFill /> Bootstrap     </div>
+  <div className="col p-3 border border-light"> <SiAdobephotoshop /> Photoshop    </div>
+  <div className="col p-3 border border-light"> <SiAdobeillustrator /> Illustrator</div>
+  </div>
 </div>
 
-<div>
-<div><img src="" alt="icon javascript"/></div>
-<div><h3>javaScript</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon react.js"/></div>
-<div><h3>react.js</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon mySQL"/></div>
-<div><h3>mySQL</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon MongoDB"/></div>
-<div><h3>MongoDB</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon HTML"/></div>
-<div><h3>HTML</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon CSS"/></div>
-<div><h3>CSS</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon Bootstrap"/></div>
-<div><h3>Bootstrap</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon Photoshop"/></div>
-<div><h3>Photoshop</h3></div>
-</div>
-
-<div>
-<div><img src="" alt="icon illustrator"/></div>
-<div><h3>illustrator</h3></div>
-</div>
-      </div>
   )
 }

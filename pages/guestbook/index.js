@@ -1,12 +1,12 @@
-import Head from "next/head"
-
+import Head from "next/head";
+import GuestBook from '../../components/guestbook/GuestBook'
 export default function Guestbook() {
-    return (
-      <>
-              <Head> 
-       <title>Portfolio | Guestbook</title></Head>
-        <h1>guestbook</h1>
-      </>
-    )
-  }
-  
+  return (
+    <>
+      <Head>
+        <title>Portfolio | Guestbook</title>
+      </Head>
+      <GuestBook/>
+    </>
+  );
+}
