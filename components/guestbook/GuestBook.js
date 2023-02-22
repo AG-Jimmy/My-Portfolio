@@ -1,11 +1,12 @@
+
+
 export default function GuestBook() {
   return (
     <div>
       <div className="container" style={{ width: "100%", height: "800px" }}>
      
+{/* make some changes on component like about,skills,navebar,guestbook user ... */}
 
-
-     
       <div  className="border card-body p-4 row d-flex justify-content-center"
              style={{ backgroundColor: "transparent" }}>
 

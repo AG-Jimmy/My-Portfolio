@@ -1,6 +1,9 @@
 .links:hover {
-    border-bottom: 2px white solid;
+    background-color: rgb(59, 59, 59);
+    border-radius: 50px;
+
 }
+
 .continuer{
     padding:8% 0 3% 0;
     border-bottom: 2px white solid;

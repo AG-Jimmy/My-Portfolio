@@ -1,26 +1,23 @@
+import Image from "next/image";
 
 export default function About() {
+
     return (
+
       <div className="imgNameBio  container  " style={{paddingTop:"60px"}}>
 
-
-      <div className="row ">
-        
-        <div className="col  justify-content-end d-flex  " >
-          <img  src="myIMG.jpg" alt="my profile image" width='60%' height='60%' className="rounded-circle  img-thumbnail"/> 
-        </div>
-
-        <div className="col  d-flex align-items-center" >
-          <div >       
-            <h1>Ahmed Gamal</h1>
-            <h6>MERN Stack developer</h6>
-          </div>
-        </div>
-
-      </div>
-
-      <div className=" p-5">
+{/* bg-primary -   bg-primary-subtle
+ bg-secondary - bg-secondary-subtle 
+ bg-success -   bg-success-subtle 
+ bg-danger  -   bg-danger-subtle 
+ bg-warning  -  bg-warning-subtle 
+ bg-info      - bg-info-subtle 
+ bg-light     - bg-light-subtle 
+ bg-dark      - bg-dark-subtle 
+ bg-body-secondary -  bg-body-tertiary*/}
+      <div className=" py-5 px-3 ">
         <h2>About</h2>
+
         <ul>
           <li><p> Over 1 years of professional exposure in JavaScript technology such as React JS, 
            MongoDB, Express.js and Node JS.</p></li>
@@ -46,4 +43,4 @@ export default function About() {
       </div>
     )
   }
-  
+
