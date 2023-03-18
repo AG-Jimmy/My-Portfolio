@@ -18,6 +18,6 @@ module.exports={
   //       pathname: '/users/Ahmed-Gamal-Jimmy/repos',
   //     },
   //   ],
-  //   // domains:['https://api.github.com/users/Ahmed-Gamal-Jimmy/repos']
+  //   domains:['https://api.github.com/users/Ahmed-Gamal-Jimmy/repos']
   // }
 }
