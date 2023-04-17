@@ -1,6 +1,11 @@
+
 import { useState, useEffect } from "react";
+import { Input,Text,Card, Button,Textarea ,Grid} from "@nextui-org/react";
 import clientPromise from "@/utils/connectMongo";
+
+
 export default function Guestbook({ comments }) {
+
   const [postsState, setPostsState] = useState([]);
   const [name, setName] = useState("");
   const [textcomment, setTextComment] = useState("");
@@ -8,10 +13,11 @@ export default function Guestbook({ comments }) {
 
   useEffect(() => {
     setPostsState(comments);
-  }, [comments]);
+  }, [postsState]);
 
   let submitForm = async (e) => {
-    setLoading(true);
+    if (name,textcomment==/[a-z]/&&name,textcomment.length >=3) {
+      setLoading(true);
     // e.preventDefault();
     let res = await fetch("http://localhost:3000/api/comments", {
       method: "POST",
@@ -22,48 +28,61 @@ export default function Guestbook({ comments }) {
     setName("");
     setTextComment("");
     setLoading(false);
+    }else{ 
+      alert('You must enter your name and comment')
+    e.preventDefault();}
+    
   };
 
   return (
-    <div className="container">
-      <div>
-        {postsState.map((comment, index) => {
-          return (
-            <div key={index}>
-              <img
-                alt="imgcomment"
-                style={{ width: "50px", height: "50px" }}
-                src={comment.img_url}
-              />
-              <h2>{comment.name}</h2>
-              <p>{comment.textcomment}</p>
-            </div>
-          );
-        })}
-      </div>
+<div className="container">
 
-      <form onSubmit={submitForm}>
-        <input
-          type="text"
-          name="title"
-          placeholder="Title"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+         <div style={{width:"50%"}} >
+            {postsState.map((comment, index) => {
+                return ( 
+                  
+                     <div key={index}>
+           
+                        <h2>{comment.name }</h2>
+                        <p>{comment.textcomment}</p>
+                     </div>);})
+             }
 
-        <input
-          type="text"
-          name="content"
-          rows="10"
-          placeholder="Content"
-          value={textcomment}
-          onChange={(e) => setTextComment(e.target.value)}
-        />
 
-        <button type="submit" disabled={loading ? true : false}>
-          {loading ? "Adding" : "Add"}
-        </button>
-      </form>
+         </div>
+
+       <Card  css={{  $$cardColor:"$transform" }}>
+             <form  onSubmit={submitForm} >
+
+                   <Card.Body>
+                       <Input 
+                          labelLeft="username" 
+                          placeholder="Enter your name please ."
+                          value={name}
+                          onChange={(e) => setName(e.target.value)} />
+                   </Card.Body>
+
+                   <Card.Body>
+                       <Textarea
+                           placeholder="Tell me what you think about my website . "
+                           value={textcomment}
+                           onChange={(e) => setTextComment(e.target.value)} />
+                   </Card.Body>
+
+                   <Card.Body>
+                       <Button color="white" auto ghost
+                           size="lg"
+                           type="submit"
+                           disabled={loading ? true : false}
+                       
+                           css={ {color:"white",px:"20" }}>
+                           {loading ? "Adding" : "Add"}
+                       </Button>
+                   </Card.Body>
+            </form>
+       
+      </Card>
+    
     </div>
   );
 }

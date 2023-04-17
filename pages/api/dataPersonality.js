@@ -10,5 +10,5 @@ export default async function handlerDataPersonality(req, res) {
       .toArray();
 
     res.json({ status: 200, data: dataPersonality });
-  } else console.log("proplem");
+  } else console.log("problem");
 }

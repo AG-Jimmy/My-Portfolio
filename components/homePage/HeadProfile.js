@@ -7,7 +7,7 @@ export default function About( {ProfileInfoData}) {
 
         <div className="row   text-center align-items-center ">
           <div className="  col-md-auto " >
-            <img  src={img_url} alt="Picture of the author" width={300} height={300} 
+            <img  src={img_url} alt="Picture of the author" width={260} height={260} 
             className="rounded-circle border border-dark border-5"/>
           </div> 
 

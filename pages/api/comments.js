@@ -14,6 +14,19 @@ export default async function handlerComments(req, res) {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // switch (req.method) {
 //     case "POST":
 //       let bodyObject = JSON.parse(req.body);
@@ -24,4 +37,4 @@ export default async function handlerComments(req, res) {
 //       const comments = await db.collection("data-Personality").find({}).toArray();
 //       res.json({ status: 200, data: comments });
 //       break;
-//   }
+//   }*/

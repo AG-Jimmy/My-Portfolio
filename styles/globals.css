@@ -1,6 +1,8 @@
+
 .globalBody{
     background-color: rgb(40, 40, 40);
     color: white;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
